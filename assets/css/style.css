@@ -1,0 +1,617 @@
+/**
+ * ---------------------------------------------------------------------------
+ * 01. Load Google Font
+ * ---------------------------------------------------------------------------
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Sofia&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+ 
+ /**
+ * ---------------------------------------------------------------------------
+ * 01. Base Style
+ * ---------------------------------------------------------------------------
+ */
+ html {
+     font-size: 100%;
+     -webkit-text-size-adjust: 100%;
+     font-variant-ligatures: none;
+     -webkit-font-variant-ligatures: none;
+     text-rendering: optimizeLegibility;
+     -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+ }
+ 
+ body {
+   font-family: "Roboto", sans-serif;
+   background-color: #F5F5F5;
+   color: #333333;
+   font-size: 14px;
+   font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+   font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+ }
+ 
+ p {
+   margin: 0;
+ }
+ 
+ a {
+   transition: 0.5s;
+   text-decoration: none !important;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "Roboto", sans-serif;
+   font-weight: 900;
+   margin: 0;
+ }
+ 
+ h1 {
+   font-size: 50px;
+ }
+ 
+ h5 {
+   font-size: 18px;
+   font-weight: 900;
+ }
+ 
+ ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+ }
+ 
+ button:focus {
+   outline: none !important;
+   box-shadow: none !important;
+ }
+ 
+ img {
+     margin: 0 !important;
+     max-width: 100%;
+ }
+ 
+ /*
+     ==========================
+         Global Class
+     ==========================
+ */
+ .p0 {
+   padding: 0;
+ }
+ 
+ .pl-0 {
+   padding-left: 0;
+ }
+ 
+ .pr-0 {
+   padding-right: 0;
+ }
+ 
+ .pb-0 {
+   padding-bottom: 0;
+ }
+ 
+ .pt-0 {
+   padding-top: 0 !important;
+ }
+ 
+ .m0 {
+   margin: 0;
+ }
+ 
+ .mb-20 {
+   margin-bottom: 20px;
+ }
+ 
+ .red-bg {
+   background: #bf2228 !important;
+ }
+ 
+ .wd-opacity {
+   opacity: 0;
+ }
+ 
+ .info-section {
+   padding: 14px 20px;
+ }
+ 
+ .black-bg {
+   background: #333333 !important;
+ }
+ 
+ .orange-bg {
+   background: #f37020 !important;
+ }
+ 
+ .green-bg {
+   background: #86b816 !important;
+ }
+ 
+ .blue-bg {
+   background: #0065cd !important;
+ }
+ 
+ .green-color {
+   color: #86b816 !important;
+ }
+ 
+ .red-color {
+   color: #e57373 !important;
+ }
+ 
+ .black-color {
+   color: #333333 !important;
+ }
+ 
+ .bold-font {
+   font-weight: 900;
+ }
+ 
+ .wd-shop-btn {
+   background: #ff9800;
+   border: 0;
+   font-size: 18px;
+   font-weight: 700;
+   padding: 11px 21px;
+   border: 1px solid;
+   border-color: transparent;
+ }
+ .wd-shop-btn:hover {
+   background: white;
+   color: #ff9800;
+   border-color: #fff;
+ }
+ .wd-shop-btn i {
+   font-size: 15px;
+   margin-left: 8px;
+ }
+ 
+ .is-sticky{z-index: 99999999999!important}
+ .is-sticky .sticker-nav {
+   background: #ffffff;
+ }
+ .is-sticky .department {
+   display: none;
+ }
+ .csb-inner ul li {
+     padding: 6px 6px;
+ }
+ 
+ .reviews-load-more-full_grid,
+ .reviews-load-more {
+   display: none;
+ }
+ 
+ .reviews-load-more-full_grid.display,
+ .reviews-load-more.display {
+   display: inline-block;
+ }
+ 
+ .sticker-nav {
+   z-index: 1025 !important;
+ }
+ .mob-sticky {
+     z-index: 2025!important;
+ }
+ .modal-backdrop {
+   z-index: 1000;
+ }
+ 
+ .active-color {
+   color: #ff9800 !important;
+ }
+ 
+ .active-wishlist {
+   color: #ff4a4a;
+ }
+ 
+ figcaption .featured-bg-color {
+   background: #00cee8;
+ }
+ 
+ .bg-white {
+   background: #fff;
+ }
+ 
+ .mata-info li {
+   display: inline-block;
+   margin-right: 35px;
+   color: #999;
+   font-size: 14px;
+ }
+ .mata-info li:last-child {
+   margin-right: 0;
+ }
+ 
+ .width-auto {
+   width: auto !important;
+ }
+ 
+ .inline {
+   display: inline-block;
+ }
+ 
+ .wd-btn-search {
+   cursor: pointer;
+ }
+ .wd-btn-search i {
+   transition: 0.5s;
+ }
+ .wd-btn-search:hover i {
+   color: #ff9800;
+ }
+ 
+ #scrollUp {
+   bottom: 60px;
+   right: 20px;
+   padding: 13px 0;
+   text-align: center;
+   width: 50px;
+   height: 50px;
+   background-color: #555;
+   color: #fff;
+   border-radius: 100%;
+ }
+ #scrollUp i {
+   font-size: 25px;
+ }
+ #scrollUp:hover {
+   background: #ff9800;
+ }
+ 
+ body.second-home #scrollUp {
+   bottom: 36px;
+ }
+
+.star {
+    color: rgb(247, 139, 16);
+    padding-right: 5px;
+}
+
+/* ---------------------
+index page 
+---------------------*/
+
+/*----------------
+ index page logo and head section 
+ ------------------*/
+#lg-logo-img {
+    width: 250px;
+}
+
+#logo-img {
+    width: 150px;
+    display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.7);
+}
+
+.fa-angle-right {
+    padding-left: 7px;
+    color: rgba(0,0,0,.6);
+}
+
+.dropdown-item:hover .fa-angle-right{
+    color: rgba(0,0,0,.8);
+}
+
+.dropdown {
+    width: 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/*---------------
+ logo and head section end 
+ ------------------------*/
+
+/*------------------
+ review section 
+ -------------------*/
+
+#text-review textarea {
+    width: 100%;
+    padding: 20px;
+}
+
+#text-review textarea::placeholder {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0.5);
+}
+
+.container-img {
+    background-color: #e7e7e7;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.06);
+}
+
+.container-img-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.display_image {
+    width: 100%;
+    height: 90px;
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.video_input {
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    border: 1px solid rgb(46, 46, 46);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* kwyword */
+
+.keyword span {
+  background-color: rgb(221, 221, 221);
+  padding: 3px;
+  margin: 5px!important;
+  border-radius: 10px;
+}
+
+ 
+
+/*--------------------
+ product page review section 
+ -----------------------*/
+
+#reviewproduct .card .card-body .card-title {
+    font-size: 16px;
+}
+
+#reviewproduct .card .card-body .person-review {
+    width: 100%;
+}
+
+#reviewproduct .card .card-body .person-review img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#reviewproduct .card .card-body .person-review .star {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;  
+    color: rgb(247, 139, 16);
+}
+
+#reviewproduct .card .card-body h6 {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(109, 109, 109);
+}
+
+#reviewproduct .card .card-body h6 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#showbtn button {
+    background-color: rgb(109, 109, 109);
+    border: none;
+}
+
+#showbtn button:hover {
+    background-color: rgb(247, 139, 16);
+}
+
+#reviewproduct .card .card-body p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+
+#reviewproduct .card .card-body .btn-primary {
+    background-color: rgb(247, 139, 16);
+    border: none;
+}
+
+.right-site-review {
+    margin-bottom: 20px;
+}
+
+.right-site-review .right-site-sigle {
+    width: 100%;
+}
+
+.right-site-review .right-site-sigle img {
+    width: 40%;
+    height: 80px;
+}
+
+.right-site-review .right-site-sigle .review-title {
+    width: 60%;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+.right-site-review .right-site-sigle .review-title p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.right-site-review .right-site-sigle .review-title .star i {
+    font-size: 12px;
+    color: rgb(247, 139, 16);
+}
+
+#top-rated .row {
+    --bs-gutter-x: -0.10rem;
+}
+
+
+
+.showMore {
+  background-color: rgb(225, 225, 225);
+  color: #555555;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.showMore:hover {
+  background-color: #ff9800;
+  color: #f1f1f1;
+}
+
+#RecentReviews {
+color: black;
+}
+
+#RecentReviews h5{
+  font-size: 28px;
+  font-weight: 500;
+  color: #636363;
+}
+
+/* -----------------------
+review page section  -
+------------------------ */
+
+.des-rating h6 {
+    display: flex;
+}
+
+.des-rating h6 .star i {
+    padding-right: 5px;
+}
+
+.des-rating h6 p {
+    color: rgb(75, 75, 75);
+}
+
+.des-rating h6 p span {
+    font-size: 12px;
+}
+
+.des-rating p {
+    font-size: 14px;
+}
+
+/* ---------------------
+ footter section 
+ -------------------- */
+
+footer {
+    background-color: #E7E7E7;
+}
+
+#copyright {
+    background-color: rgb(129, 129, 129);
+    color: #ffffff;
+    margin: 0;
+    padding: 15px 0;
+}
+
+/* ---------------------
+comment css -
+--------------------*/
+
+#user-comment .media {
+    position: relative;
+}
+
+#user-comment::before {
+    content: "";
+    max-height: 100%;
+    width: 1px;
+    border: 1px dotted rgb(75, 75, 75);
+    left: -10px;
+}
+
+
+
+
+
+
+
+/* media */
+
+/* ============ desktop view / ============ */
+
+@media all and (min-width: 992px) {
+
+
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .dropdown-menu .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    .dropdown-menu .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+
+    .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    #logo-img {
+        width: 150px;
+        display: flex;
+    }
+    #lg-logo-img {
+        display: none;
+    }
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+
+}
+/* ============ small devices end ============ */
+/* media */
